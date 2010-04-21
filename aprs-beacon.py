@@ -33,7 +33,7 @@ sSock.connect((serverHost, serverPort))
 # logon
 sSock.send('user %s pass %s vers KD7LXL-Python 0.1\n' % (aprsUser, aprsPass) )
 # send packet
-sSock.send('%s>APRS:%s\n' % (callsign, status) )
+sSock.send('%s>APRS:%s\n' % (callsign, btext) )
 # close socket
 sSock.shutdown(0)
 sSock.close()
